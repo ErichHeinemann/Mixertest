@@ -90,7 +90,7 @@ void setup()
   
   Serial.println("Define MainOut of Mixer");
   // new with Mixer, connect mainOut to the output
-  mainOut = new AudioMixerOutBuffer( 2, out );
+  mainOut = new AudioMixerOutBuffer( 32, out );
   
   mainOut->SetRate(11025);
   mainOut->SetChannels(2); // 2=Stereo, 1=Mono
